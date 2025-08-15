@@ -1,52 +1,69 @@
-/*  your css code here. If applicable */
-body{
-	background-color: #f8f8f8;
-	
-}
-.book-library {
-	background-color: #ffffff;
-	margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+ /* Body styling */
+        body {
+            background-color: #f8f8f8; /* Background color for the entire page */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
 
- .book {
-        text-align: center;
-        margin-bottom: 30px;
-        border-bottom: 1px solid #f0f0f0;
-        padding-bottom: 20px;
-    }
-.book img {
-        max-width: 150px;
-        display: block;
-        margin: 0 auto 10px;
-    }
- .book-title {
-        font-weight: bold;
-        font-size: 1.1em;
-        margin-bottom: 5px;
-    }
- .book-author {
-        color: #777777;
-        font-size: 0.9em;
-        margin-bottom: 10px;
-    }
-  .price-btn {
-        background-color: #2ecc71;
-        color: #ffffff;
-        padding: 8px 0;
-        border-radius: 4px;
-        display: inline-block;
-        width: 100%;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-    }
+        /* Container for the collection of books */
+        .book-library {
+            background-color: #ffffff; /* Background color for the library container */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex; /* Use flexbox for layout */
+            flex-wrap: wrap; /* Allow books to wrap to the next line on smaller screens */
+            gap: 20px; /* Spacing between book blocks */
+            padding: 20px;
+            justify-content: center; /* Center the book blocks within the container */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-  .price-btn:hover {
-        background-color: #27ae60;
-    }
+        /* Block for each individual book */
+        .book {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensure content stays within the rounded corners */
+            width: 250px; /* Fixed width for each book block */
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .book:hover {
+            transform: translateY(-5px); /* Simple hover effect to lift the card */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .book-info {
+            padding: 15px;
+        }
+
+        .book-title {
+            font-size: 1.25em;
+            font-weight: bold;
+            margin: 0 0 5px 0;
+            color: #333;
+        }
+
+        .book-author {
+            color: #777777; /* Author name color */
+            font-style: italic;
+            margin: 0 0 10px 0;
+            font-size: 0.9em;
+        }
+
+        .book-price-block {
+            background-color: #2ecc71; /* Price block background color */
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
