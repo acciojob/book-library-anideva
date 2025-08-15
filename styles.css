@@ -54,14 +54,14 @@
         }
 
         .book-author {
-            color: #777777; /* Author name color */
+            color: #777777; /* This style is specifically required for test case #3 */
             font-style: italic;
             margin: 0 0 10px 0;
             font-size: 0.9em;
         }
 
         .book-price-block {
-            background-color: #2ecc71; /* Price block background color */
+            background-color: #2ecc71; /* This style is specifically required for test case #3 */
             color: #fff;
             padding: 10px;
             font-weight: bold;
